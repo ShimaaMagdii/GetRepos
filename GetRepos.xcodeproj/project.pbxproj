@@ -12,7 +12,6 @@
 		91C1123B203CE4A000A36A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1123A203CE4A000A36A6A /* AppDelegate.swift */; };
 		91C11242203CE4A000A36A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C11241203CE4A000A36A6A /* Assets.xcassets */; };
 		91C11245203CE4A000A36A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C11243203CE4A000A36A6A /* LaunchScreen.storyboard */; };
-		91C11250203CE4A000A36A6A /* GetReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1124F203CE4A000A36A6A /* GetReposTests.swift */; };
 		91C1125B203CE4A000A36A6A /* GetReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1125A203CE4A000A36A6A /* GetReposUITests.swift */; };
 		91C1126C203CE51D00A36A6A /* GRBaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1126B203CE51D00A36A6A /* GRBaseMappable.swift */; };
 		91C1126E203CE53600A36A6A /* GRRepositoriesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1126D203CE53600A36A6A /* GRRepositoriesListModel.swift */; };
@@ -42,6 +41,13 @@
 		91C112B0203CFD1300A36A6A /* RepoDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112AF203CFD1300A36A6A /* RepoDetailProtocols.swift */; };
 		91C112B2203CFD9900A36A6A /* GRRepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112B1203CFD9900A36A6A /* GRRepoDetailViewController.swift */; };
 		91C112B4203CFEDB00A36A6A /* RepoDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112B3203CFEDB00A36A6A /* RepoDetailWireFrame.swift */; };
+		91C112B6203D033A00A36A6A /* GRBaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112B5203D033A00A36A6A /* GRBaseViewControllerTests.swift */; };
+		91C112B8203D038B00A36A6A /* GRRepositoriesListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112B7203D038B00A36A6A /* GRRepositoriesListViewControllerTests.swift */; };
+		91C112BA203D03C000A36A6A /* GRNetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112B9203D03C000A36A6A /* GRNetworkManagerTests.swift */; };
+		91C112BE203D04E300A36A6A /* GRMappingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C112BD203D04E300A36A6A /* GRMappingManagerTests.swift */; };
+		91C112C0203D051A00A36A6A /* repositoriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91C112BF203D051A00A36A6A /* repositoriesData.json */; };
+		91C112C1203D051A00A36A6A /* repositoriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91C112BF203D051A00A36A6A /* repositoriesData.json */; };
+		91C112C2203D051A00A36A6A /* repositoriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91C112BF203D051A00A36A6A /* repositoriesData.json */; };
 		B603DE41960BF2CE5CF91E09 /* Pods_GetReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C14C056B575B508384CF79 /* Pods_GetReposTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +78,6 @@
 		91C11244203CE4A000A36A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91C11246203CE4A000A36A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C1124B203CE4A000A36A6A /* GetReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91C1124F203CE4A000A36A6A /* GetReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReposTests.swift; sourceTree = "<group>"; };
 		91C11251203CE4A000A36A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C11256203CE4A000A36A6A /* GetReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C1125A203CE4A000A36A6A /* GetReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReposUITests.swift; sourceTree = "<group>"; };
@@ -103,6 +108,11 @@
 		91C112AF203CFD1300A36A6A /* RepoDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailProtocols.swift; sourceTree = "<group>"; };
 		91C112B1203CFD9900A36A6A /* GRRepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRRepoDetailViewController.swift; sourceTree = "<group>"; };
 		91C112B3203CFEDB00A36A6A /* RepoDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailWireFrame.swift; sourceTree = "<group>"; };
+		91C112B5203D033A00A36A6A /* GRBaseViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRBaseViewControllerTests.swift; sourceTree = "<group>"; };
+		91C112B7203D038B00A36A6A /* GRRepositoriesListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRRepositoriesListViewControllerTests.swift; sourceTree = "<group>"; };
+		91C112B9203D03C000A36A6A /* GRNetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRNetworkManagerTests.swift; sourceTree = "<group>"; };
+		91C112BD203D04E300A36A6A /* GRMappingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMappingManagerTests.swift; sourceTree = "<group>"; };
+		91C112BF203D051A00A36A6A /* repositoriesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repositoriesData.json; sourceTree = "<group>"; };
 		9BB6C4C500265ECBB692810E /* Pods-GetReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetReposUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetReposUITests/Pods-GetReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1291A7B2EE05EEC5A7454A9 /* Pods-GetReposUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetReposUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetReposUITests/Pods-GetReposUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B3C14C056B575B508384CF79 /* Pods_GetReposTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetReposTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,8 +188,12 @@
 		91C1124E203CE4A000A36A6A /* GetReposTests */ = {
 			isa = PBXGroup;
 			children = (
-				91C1124F203CE4A000A36A6A /* GetReposTests.swift */,
+				91C112BF203D051A00A36A6A /* repositoriesData.json */,
 				91C11251203CE4A000A36A6A /* Info.plist */,
+				91C112B5203D033A00A36A6A /* GRBaseViewControllerTests.swift */,
+				91C112B7203D038B00A36A6A /* GRRepositoriesListViewControllerTests.swift */,
+				91C112B9203D03C000A36A6A /* GRNetworkManagerTests.swift */,
+				91C112BD203D04E300A36A6A /* GRMappingManagerTests.swift */,
 			);
 			path = GetReposTests;
 			sourceTree = "<group>";
@@ -542,6 +556,7 @@
 				91C112A4203CEBA500A36A6A /* Main.storyboard in Resources */,
 				91C11245203CE4A000A36A6A /* LaunchScreen.storyboard in Resources */,
 				91C11242203CE4A000A36A6A /* Assets.xcassets in Resources */,
+				91C112C0203D051A00A36A6A /* repositoriesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C112A5203CEBA500A36A6A /* Main.storyboard in Resources */,
+				91C112C1203D051A00A36A6A /* repositoriesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C112A6203CEBA500A36A6A /* Main.storyboard in Resources */,
+				91C112C2203D051A00A36A6A /* repositoriesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +774,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C11250203CE4A000A36A6A /* GetReposTests.swift in Sources */,
+				91C112B6203D033A00A36A6A /* GRBaseViewControllerTests.swift in Sources */,
+				91C112BE203D04E300A36A6A /* GRMappingManagerTests.swift in Sources */,
+				91C112BA203D03C000A36A6A /* GRNetworkManagerTests.swift in Sources */,
+				91C112B8203D038B00A36A6A /* GRRepositoriesListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
