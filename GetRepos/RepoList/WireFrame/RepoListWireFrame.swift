@@ -12,7 +12,7 @@ class RepoListWireFrame: RepoListWireFrameProtocol {
     
     class func createRepoListModule() -> UIViewController {
         
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "ReposNavigationController")
+        let navController = mainStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.reposNavController)
         if let view = navController.childViewControllers.first as? GRRepositoriesListViewController {
             let presenter: RepoListPresenterProtocol & RepoListInteractorOutputProtocol = RepoListPresenter()
             let interactor: RepoListInteractorInputProtocol & RepoListDataManagerOutputProtocol = RepoListInteractor()
@@ -38,10 +38,10 @@ class RepoListWireFrame: RepoListWireFrameProtocol {
     
     
     func presentRepoDetailScreen(from view: RepoListViewProtocol, forRepo repo: GRRepositoryViewModel) {
-        //let postDetailViewController = PostDetailWireFrame.createPostDetailModule(forPost: post)
+        let repoDetailViewController = RepoDetailWireFrame.createRepoDetailModule(forRepo: repo)
         
         if let sourceView = view as? UIViewController {
-            //  sourceView.navigationController?.pushViewController(postDetailViewController, animated: true)
+             sourceView.navigationController?.pushViewController(repoDetailViewController, animated: true)
         }
     }
     

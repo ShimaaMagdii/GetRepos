@@ -20,6 +20,8 @@ struct UITableViewCellIdentifier {
 struct StoryboardIdentifier {
     static let mainStoryboardIdentifier     :String = "Main"
     static let repositoriesListVCIdentifier :String = "GRRepositoriesListViewController"
+    static let repoDetailsVCIdentifier      :String = "GRRepoDetailViewController"
+    static let reposNavController           :String = "ReposNavigationController"
     
 }
 

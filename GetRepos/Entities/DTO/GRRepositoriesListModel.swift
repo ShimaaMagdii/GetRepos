@@ -44,10 +44,12 @@ class GRRepositoryModel : GRBaseMappable {
 class GROwnerModel : GRBaseMappable {
     private(set) var id                : Int!
     private(set) var avatarUrl         : String?
-    
+    private(set) var loginName         : String?
+
     override func mapping(map: Map) {
         id                             <- map [MappingKey.id]
         avatarUrl                      <- map [MappingKey.avatarUrl]
+        loginName                      <- map [MappingKey.loginName]
     }
 }
 
@@ -63,6 +65,6 @@ fileprivate struct MappingKey {
     static let subscribersUrl         : String = "subscribers_url"
     static let totalCount             : String = "total_count"
     static let watchersCount          : String = "watchers_count"
-    
+    static let loginName              : String = "login"
 }
 

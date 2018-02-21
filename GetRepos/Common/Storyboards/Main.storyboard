@@ -39,10 +39,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="repositoryCell" rowHeight="150" id="KWv-S2-Ri4" customClass="GRRepositoryViewCell" customModule="GetRepos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="347" height="150"/>
+                                        <rect key="frame" x="0.0" y="28" width="359" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWv-S2-Ri4" id="0JU-IF-HUk">
-                                            <rect key="frame" x="0.0" y="0.0" width="314" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="326" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpk-AY-KLX" userLabel="containerView">
@@ -137,8 +137,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3rc-He-vbj"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qmx-ae-0dR"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gGE-5e-Pt5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JSC-wf-dKL"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -159,6 +159,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--Repo Detail View Controller-->
+        <scene sceneID="Cm5-WA-g5O">
+            <objects>
+                <viewController storyboardIdentifier="GRRepoDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bLC-tf-k0R" customClass="GRRepoDetailViewController" customModule="GetRepos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5lh-hn-8fP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yw-Wu-syV" userLabel="repoName">
+                                <rect key="frame" x="20" y="40" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vB1-NW-ppa">
+                                <rect key="frame" x="30" y="110" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0b8-2c-eMl"/>
+                                    <constraint firstAttribute="height" constant="150" id="wUU-0a-W54"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Name:-" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfi-w0-3GO">
+                                <rect key="frame" x="206" y="176.5" width="149" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-0b-txd" userLabel="loginName">
+                                <rect key="frame" x="206" y="196.5" width="149" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V8J-0b-txd" firstAttribute="top" secondItem="qfi-w0-3GO" secondAttribute="bottom" constant="2" id="2x5-kG-yxv"/>
+                            <constraint firstItem="vB1-NW-ppa" firstAttribute="top" secondItem="0Yw-Wu-syV" secondAttribute="bottom" constant="49" id="GGn-Ox-aCB"/>
+                            <constraint firstItem="0Yw-Wu-syV" firstAttribute="top" secondItem="Wzh-hU-1hi" secondAttribute="top" constant="20" id="NaF-ID-ipp"/>
+                            <constraint firstItem="0Yw-Wu-syV" firstAttribute="leading" secondItem="Wzh-hU-1hi" secondAttribute="leading" constant="20" id="Qsu-Dj-W2x"/>
+                            <constraint firstItem="Wzh-hU-1hi" firstAttribute="trailing" secondItem="qfi-w0-3GO" secondAttribute="trailing" constant="20" id="WHS-Js-y1n"/>
+                            <constraint firstItem="qfi-w0-3GO" firstAttribute="leading" secondItem="vB1-NW-ppa" secondAttribute="trailing" constant="26" id="byd-tJ-cI1"/>
+                            <constraint firstItem="qfi-w0-3GO" firstAttribute="centerY" secondItem="vB1-NW-ppa" secondAttribute="centerY" id="fKI-a8-hNG"/>
+                            <constraint firstItem="V8J-0b-txd" firstAttribute="leading" secondItem="qfi-w0-3GO" secondAttribute="leading" id="iVF-os-PjF"/>
+                            <constraint firstItem="V8J-0b-txd" firstAttribute="trailing" secondItem="qfi-w0-3GO" secondAttribute="trailing" id="jeW-tF-zJD"/>
+                            <constraint firstItem="Wzh-hU-1hi" firstAttribute="trailing" secondItem="0Yw-Wu-syV" secondAttribute="trailing" constant="20" id="oRI-Ke-7iv"/>
+                            <constraint firstItem="vB1-NW-ppa" firstAttribute="leading" secondItem="Wzh-hU-1hi" secondAttribute="leading" constant="30" id="p5o-PJ-jvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wzh-hU-1hi"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="vB1-NW-ppa" id="yyl-ia-HuP"/>
+                        <outlet property="loginNameLabel" destination="V8J-0b-txd" id="nDF-qq-q8m"/>
+                        <outlet property="titleLabel" destination="0Yw-Wu-syV" id="Maa-dX-iID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5D-1F-iLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="42.728635682158924"/>
         </scene>
     </scenes>
     <resources>
