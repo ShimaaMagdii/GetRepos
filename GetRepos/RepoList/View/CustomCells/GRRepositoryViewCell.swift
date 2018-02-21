@@ -22,10 +22,13 @@ class GRRepositoryViewCell : UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var forksLabel: UILabel!
-    
+    @IBOutlet weak var watchersLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        containerView.layer.borderColor = UIColor.white.cgColor
+        containerView.layer.borderWidth = 1
+        containerView.layer.cornerRadius = 4
         containerView.dropCardShadow()
     }
     
@@ -40,6 +43,9 @@ class GRRepositoryViewCell : UITableViewCell {
             descLabel.text = repositoryModel.desc
             if let forks =  repositoryModel.forks {
                 forksLabel.text = "\(forks)"
+            }
+            if let watchers =  repositoryModel.watchers {
+                watchersLabel.text = "\(watchers)"
             }
             if let urlString = repository?.avatarUrl{
                 let url = URL(string: urlString)

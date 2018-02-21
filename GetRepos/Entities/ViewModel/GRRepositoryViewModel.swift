@@ -16,15 +16,16 @@ class GRRepositoryViewModel: GRBaseViewModel {
     var desc :String?
     var avatarUrl :String?
     var forks: Int?
-    
+    var watchers: Int?
     
     // MARK: - Init
-    required public init(name: String!, desc: String?, avatarUrl: String?, forks: Int?) {
+    required public init(name: String!, desc: String?, avatarUrl: String?, forks: Int?, watchers: Int?) {
         
         self.name = name
         self.desc = desc
         self.avatarUrl = avatarUrl
         self.forks = forks
+        self.watchers = watchers
     }
     
 }

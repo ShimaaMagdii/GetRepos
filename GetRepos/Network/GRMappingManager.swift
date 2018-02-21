@@ -22,7 +22,7 @@ class GRMappingManager {
         var repositoriesList = [GRRepositoryViewModel]()
         if let repositories = repositoryListData?.repositoriesList {
             for repository in repositories  {
-                let newRepositoryModel =  GRRepositoryViewModel(name: repository.name, desc: repository.desc, avatarUrl: repository.owner?.avatarUrl, forks: repository.forksCount)
+                let newRepositoryModel =  GRRepositoryViewModel(name: repository.name, desc: repository.desc, avatarUrl: repository.owner?.avatarUrl, forks: repository.forksCount, watchers: repository.watchersCount)
                 repositoriesList.append(newRepositoryModel)
             }
             

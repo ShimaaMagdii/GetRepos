@@ -28,8 +28,8 @@ class GRRepositoryModel : GRBaseMappable {
     private(set) var owner             : GROwnerModel?
     private(set) var desc              : String?
     private(set) var forksCount        : Int?
+    private(set) var watchersCount     : Int?
     private(set) var subscribersUrl    : String?
-    
     
     override func mapping(map: Map) {
         id                             <- map [MappingKey.id]
@@ -37,6 +37,7 @@ class GRRepositoryModel : GRBaseMappable {
         owner                          <- map [MappingKey.owner]
         desc                           <- map [MappingKey.desc]
         forksCount                     <- map [MappingKey.forksCount]
+        watchersCount                  <- map [MappingKey.watchersCount]
     }
 }
 
@@ -58,9 +59,10 @@ fileprivate struct MappingKey {
     static let owner                  : String = "owner"
     static let desc                   : String = "description"
     static let forksCount             : String = "forks_count"
+    static let repositoriesList       : String = "items"
     static let subscribersUrl         : String = "subscribers_url"
     static let totalCount             : String = "total_count"
-    static let repositoriesList       : String = "items"
+    static let watchersCount          : String = "watchers_count"
     
 }
 
